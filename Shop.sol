@@ -12,8 +12,8 @@ contract Shop {
     // Contructor of the contract
     constructor() {
         owner = payable(msg.sender);
-        NumberProducts = 0;
-        Price = 0;
+        NumberProducts = 10;
+        Price = 100;
     }
 
      // Modifier for only owner
