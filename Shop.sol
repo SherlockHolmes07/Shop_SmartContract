@@ -46,7 +46,7 @@ contract Shop {
     */
     function buyProduct(uint _NumberProducts) public payable {
         // Checks if the value sent is enough
-        if (msg.value != Price * _NumberProducts) {
+        if (msg.value >= Price * _NumberProducts) {
             // revet if not enough money
             revert("Not enough money");
         }
