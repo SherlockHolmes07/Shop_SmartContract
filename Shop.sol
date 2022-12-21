@@ -20,6 +20,7 @@ contract Shop {
     modifier  onlyOwner() {
         // Checks if the function caller is the owner
         require(msg.sender == owner, "Only owner can call this function.");
+        _;
     }
 
     /*
